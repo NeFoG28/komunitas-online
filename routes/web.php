@@ -20,9 +20,6 @@ Route::get('/', function () {
 Route::get('/beranda', function () {
     return view('beranda');
 });
-Route::get('/berandav2', function () {
-    return view('berandav2');
-});
 Route::get('/login', function () {
     return view('login');
 });
