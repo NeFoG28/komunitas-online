@@ -32,3 +32,7 @@ Route::get('/komen', function () {
 Route::get('/profil', function () {
     return view('profil');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
